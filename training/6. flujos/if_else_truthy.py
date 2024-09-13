@@ -63,6 +63,7 @@ else:
 my_list = []
 if my_list:
     print("📚 The list has items.")
+
 else:
     print("📭 The list is empty.")
 
@@ -71,17 +72,20 @@ name = "Alice"
 if name:
     print(f"👋 Hello, {name}!")
 else:
-    print("🔍 No name provided.")
+    print("🔍 No name provided")
+
+print("This is a raw string. \n newline.")
+
 
 # Custom object truthiness example:
 class Person:
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
+    def __init__(pepito, arg1, arg2):
+        pepito.name = arg1
+        pepito.age = arg2
 
-    def __bool__(self):
+    def __bool__(juanito):
         # Consider a person 'truthy' if they are an adult (18 or older)
-        return self.age >= 18
+        return juanito.age >= 18
 
 # Creating instances of Person
 teenager = Person("Alice", 16)
