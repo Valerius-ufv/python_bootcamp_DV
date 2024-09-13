@@ -1,14 +1,7 @@
 # Check the type of a string
 default_string = b"default string"
-<<<<<<< HEAD
-default_string = 5
-print(str(default_string))
-numero= "55"
-print(int(numero)+default_string)
-=======
 print(str(default_string))
 
->>>>>>> 5705a7dc37d499f79f44907cb6d86ca6471e90a7
 
 print(type(default_string))  # Output: <class 'str'>
 
@@ -25,11 +18,7 @@ is_unicode = isinstance(unicode_string, str)
 print("Is unicode_string of type str (Unicode)?:", is_unicode)  # Output: True
 
 # Compare with bytes
-<<<<<<< HEAD
-byte_string = b"default string"
-=======
 byte_string = b" default string 2 "
->>>>>>> 5705a7dc37d499f79f44907cb6d86ca6471e90a7
 print(byte_string)  # Output: <class 'bytes'>
 
 # Show the difference between str and bytes
@@ -38,8 +27,4 @@ try:
 except TypeError as e:
     print("TypeError when trying to combine str and bytes:", e)
 
-<<<<<<< HEAD
 print(combined_string)
-=======
-print(combined_string)
->>>>>>> 5705a7dc37d499f79f44907cb6d86ca6471e90a7

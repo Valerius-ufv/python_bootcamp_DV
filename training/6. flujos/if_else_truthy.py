@@ -48,9 +48,12 @@ x = [1, 2, 3]
 y = [1, 2, 3]
 z = x
 
+print(f"x0 is y0: /{x[0] is y[0]}")  # True, because we are reusing integers
+print(f"x equal y: {x == y}")  # True
 print(f"x is z: {x is z}")  # True, because z points to the same object as x
 print(f"x is y: {x is y}")  # False, because x and y are different objects in memory
 print(f"x is not y: {x is not y}")  # True, because x and y are not the same object
+
 
 # Fun example of falsy and truthy values:
 happy = False
@@ -59,6 +62,17 @@ if happy:
 else:
     print("😔 I'm not happy...")
 
+
+alto = 5
+ancho = 17
+espacio_maximo = 22
+
+if alto + ancho < espacio_maximo:
+    print("cabe")
+else:
+    print("no cabe") 
+
+print("el ancho es" , alto + ancho, " y esta genial")   
 # Checking if a list is empty:
 my_list = []
 if my_list:
@@ -75,6 +89,13 @@ else:
     print("🔍 No name provided")
 
 print("This is a raw string. \n newline.")
+
+
+print("This is a raw string.  \n  newline.")
+print(r"This is a raw string.  \n not newline.")
+print("This is a raw string.  \\n not newline.")
+print(f"x is not y: \\{{x}}") 
+
 
 
 # Custom object truthiness example:
