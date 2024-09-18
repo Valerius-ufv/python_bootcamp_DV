@@ -1,0 +1,28 @@
+# Crear una función que logré sumar los elementos de una lista
+
+def sumar_elementos (list):
+    print("El input recibido es", list)
+    sumatorio = 0
+    for element in list:
+        print(element)
+        sumatorio = sumatorio + element
+    return sumatorio
+
+lista = [1, 2, 5, 20]
+
+
+variable = sumar_elementos(lista)
+print(variable)
+
+def sumar_elementos_sin_lista (*argumentos):
+    print("El input recibido es", argumentos)
+    sumatorio = 0
+    for element in argumentos:
+        print(element)
+        sumatorio = sumatorio + element
+    return sumatorio
+
+variable = sumar_elementos_sin_lista(1,2,3,4,5,6,7)
+print(variable)
+
+
